@@ -33,8 +33,3 @@ def toggle_case(line):
     if len(line) > 0 and line[1:].islower():
         return line.title()
     return line
-
-print(toggle_case("Hello, World!"))
-print(toggle_case("HELLO, WORLD!"))
-print(toggle_case("hello, world!"))
-print(toggle_case("hello, World!"))
