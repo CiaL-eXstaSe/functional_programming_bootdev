@@ -36,3 +36,22 @@ an example string
 should become:
 
 ```
+an example string
+```
+
+Tips
+
+Notice the two newlines in the example above! You don't need a trailing newline, 
+but you do need the 2 newlines between the triple backticks. 
+You can achieve this by using the newline \n escape character. Here's an example:
+
+print("I wish the ring had never come to me.\nI wish none of this had happened.")
+
+becomes:
+
+I wish the ring had never come to me.
+I wish none of this had happened.
+"""
+
+def file_to_prompt(file, to_string):
+    return f"```\n{to_string(file)}\n```"
